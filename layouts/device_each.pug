@@ -1,0 +1,50 @@
+extends ./layout
+block content				
+				.inner.cover
+					h1.cover-heading='<< '+name+' >>'
+					.col-sm-6
+						.card.text-white.bg-primary.mb-3(style='max-width: 60rem;')
+							.card-header
+								span(style='color:#000000')
+									p(style='font-size:20px').card-text Power Consumption[Watt]
+							.card-body
+								p(style='font-size:15px').card-text=power
+						.card.text-white.bg-primary.mb-3(style='max-width: 60rem;')
+							.card-header
+								span(style='color:#000000')
+									p(style='font-size:20px').card-text Status
+							.card-body
+								if status === 1
+									p.card-text='ON'
+								else
+									p.card-text='OFF'
+					.col-sm-6
+						.card.text-white.bg-primary.mb-3(style='max-width: 60rem;')
+							.card-header
+								span(style='color:#000000')
+									p(style='font-size:20px').card-text Recently Start Time
+							.card-body
+								p(style='font-size:15px').card-text=start
+						.card.text-white.bg-primary.mb-3(style='max-width: 60rem;')
+							.card-header
+								span(style='color:#000000')
+									p(style='font-size:20px').card-text Recently End Time
+							.card-body
+								p(style='font-size:15px').card-text=end
+					.col-sm-6
+						.card.text-white.bg-primary.mb-3(style='max-width: 60rem;')
+							.card-header
+								span(style='color:#000000')
+									p(style='font-size:20px').card-text Device Connection Date
+							.card-body
+								p(style='font-size:15px').card-text=create
+
+					.col-sm-12
+						a(href="/device/delete/"+name, class="btn btn-lg btn-warning") Delete Device
+						a(href="/device/", class="btn btn-lg btn-success") Back to List
+						a(href="/device/"+name, class="btn btn-lg btn-default") Renew
+
+
+				.mastfoot
+					.inner
+						p @2017 Yu-brother's, Inc.

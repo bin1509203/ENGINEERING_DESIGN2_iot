@@ -1,0 +1,21 @@
+extends ./layout
+block content				
+				.inner.cover
+					h1.cover-heading='<< Device List >>'
+					if devices
+						nav
+							each device in devices
+
+								a(href="/device/"+device, class="btn btn-info btn-lg btn-block")= device
+
+						nav
+							h2
+								a(href="/device/new", class="btn btn-lg btn-success") Add Device
+								a(href="/", class="btn btn-lg btn-primary") Home
+								a(href="/device", class="btn btn-lg btn-default") Renew
+					else
+						h2.cover-heading Cannot Find Device
+
+				.mastfoot
+					.inner
+						p @2017 Yu-brother's, Inc.

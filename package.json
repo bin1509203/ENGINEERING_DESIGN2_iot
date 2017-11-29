@@ -1,0 +1,31 @@
+{
+  "name": "yu_bro",
+  "version": "1.0.0",
+  "description": "engineering_design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JB",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "bower": "^1.8.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-static": "^1.2.5",
+    "jade-bootstrap": "^1.0.14",
+    "jquery": "^3.2.1",
+    "jsdom-no-contextify": "^3.1.0",
+    "mocha": "^4.0.1",
+    "node-delay": "^1.0.1",
+    "path": "^0.12.7",
+    "pretty": "^2.0.0",
+    "pug": "^2.0.0-rc.4",
+    "pug-bootstrap": "0.0.15",
+    "request": "^2.83.0",
+    "tryjson": "^1.1.4",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

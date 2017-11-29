@@ -1,0 +1,21 @@
+extends ./layout
+block content				
+				.inner.cover
+					h1.cover-heading='<< Add Device >>'
+					
+					form(action="/device" method='post')
+						.form-group.row
+							label.col-sm-2.col-form-label(for='inputEmail3') DeviceName: 
+							.col-sm-12
+								input#inputEmail3.form-control(type='name', name='name', placeholder='Device Name')
+						.form-group.row
+							label.col-sm-2.col-form-label(for='inputPassword3') PowerConsumption(Watt):
+							.col-sm-12
+								input#inputEmail3.form-control(type='power', name='power', placeholder='Power Consumption(Watt)')
+						.form-group.row
+							.col-sm-12
+								button.btn-lg.btn-primary(type='submit') Submit                                                    				
+
+				.mastfoot
+					.inner
+						p @2017 Yu-brother's, Inc.

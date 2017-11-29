@@ -1,0 +1,14 @@
+extends ./layout
+block content				
+
+				.inner.cover
+					h1.cover-heading='Smart Home Service  '+description
+					p.lead='# of Devices: '+device_num
+					p.lead='Total Power Consumption: '+power+' kWh'
+					p.lead='Electric Charges: '+price+' 원'
+					p.lead='Recently accessed time: '+date
+					a(href="/", class="btn btn-lg btn-default") Renew
+
+				.mastfoot
+					.inner
+						p @2017 Yu-brother's, Inc.
